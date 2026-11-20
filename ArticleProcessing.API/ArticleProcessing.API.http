@@ -1,0 +1,13 @@
+@ArticleProcessing.API_HostAddress = http://localhost:5093
+
+###
+# Use a new UUID for each new article. Reuse it with the same body when retrying.
+POST {{ArticleProcessing.API_HostAddress}}/articles
+Accept: application/json
+Content-Type: application/json
+Idempotency-Key: 78686e44-025c-4118-8bfd-c59cb31f80f2
+
+{
+  "title": "Example article",
+  "body": "Example article content."
+}

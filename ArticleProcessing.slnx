@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="AricleProcessing.Queue/AricleProcessing.Queue.csproj" />
+  <Project Path="ArticleProcessing.API/ArticleProcessing.API.csproj" />
+  <Project Path="ArticleProcessing.Contracts/ArticleProcessing.Contracts.csproj" />
+  <Project Path="ArticleProcessing.Models/ArticleProcessing.Models.csproj" />
+  <Project Path="ArticleProcessing.Persistence/ArticleProcessing.Persistence.csproj" />
+  <Project Path="ArticleProcessing.Worker/ArticleProcessing.Worker.csproj" />
+</Solution>

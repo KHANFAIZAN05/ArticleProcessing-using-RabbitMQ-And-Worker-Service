@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ArticleProcessing.Worker-29d2721e-507a-4607-9eec-732efe75e00a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AricleProcessing.Queue\AricleProcessing.Queue.csproj" />
+    <ProjectReference Include="..\ArticleProcessing.Contracts\ArticleProcessing.Contracts.csproj" />
+    <ProjectReference Include="..\ArticleProcessing.Persistence\ArticleProcessing.Persistence.csproj" />
+  </ItemGroup>
+</Project>
